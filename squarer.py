@@ -9,6 +9,7 @@ IMAGE_EXT = ('.jpg', '.jpeg', '.png')
 def main():
     for file in os.listdir('.'):
         (file_name, file_extension) = os.path.splitext(file)
+        file_extension = file_extension.lower()
         if file_extension not in IMAGE_EXT:
             continue
         image = Image.open(file)
