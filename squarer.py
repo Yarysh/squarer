@@ -20,8 +20,7 @@ def main():
             offset = round((max_side - min_side) / 2)
             canvas.paste(image, (offset if width < height else 0, offset if width > height else 0))
             canvas.save(file_name + '-squarer' + file_extension)
-        else:
-            pass
+
 
 if __name__ == '__main__':
     main()
